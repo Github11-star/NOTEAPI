@@ -1,14 +1,14 @@
 const express  = require("express");
-const req = require("express/lib/request");
-const res = require("express/lib/response");
+const { getNotes, createNote, deleteNote, updateNote } = require("../controllers/noteControllers");
+const auth = require("../middlewares/auth");
 const noteRouter = express.Router();
 
-noteRouter.get("/", (req, res)=>{
-    res.send("Get note requesr");
-});
+noteRouter.get("/", auth, getNotes);
 
-noteRouter.post("/", (req, res)=>{
-    res.send("Get post request");
-});
+noteRouter.post("/", auth, createNote);
+
+noteRouter.delete("/:id", auth, deleteNote);
+
+noteRouter.put("/:id", auth, updateNote);
 
 module.exports = noteRouter;
