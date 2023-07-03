@@ -4,8 +4,15 @@ const noteRouter = require("./routes/noteRoutes");
 const app = express();
 
 const mongoose = require("mongoose");
+const req = require("express/lib/request");
+const res = require("express/lib/response");
 
 app.use(express.json());
+
+app.use((req, res, next)=>{
+    console.log("HTTP Method - " + req.method + ", URL - " + req.url);
+    next();
+});
 
 app.use("/users", userRouter);
 app.use("/note", noteRouter);
