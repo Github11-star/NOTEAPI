@@ -1,11 +1,17 @@
-# NOTEAPI
+Notes API - Express JS
+Simple API to showcase CRUD operations using Express JS with Authentication using JWT Tokens
 
-NodeJS ExpressJS crash course in Hindi. In this tutorial, learn how to deploy apis on heroku. Step by step tutorial on how to deploy node js apis on heroku. Learn how to define different configuration files based on environment i.e. development specific configurations and production specific configurations. Learn how to use dotenv package for configuration, how to read .env files in node js applications. Heroku step by step guide for api deployment.
+Features
+Express JS Rest API Setup
+Authentication using JWT Tokens with Middlewares
+Learn how to set up a simple express js API with a minimal codebase.
+Complete Signup/Login Flow.
+CRUD operations for Notes (GET, POST, PUT, DELETE)
+🚀 About this series
+This is a series covering 2 parts -
 
-In this Express JS course, we will building complete Rest API using express framework. Complete tutorial covering - Authentication using JWT, Mongoose for MongoDB with deployment using Heroku.
+Rest API (Node JS)
+Android App
+But you can use it on the Web as well. Learn how to host this API on Heroku as well. Tutorials are available on our channel - CheezyCode.
 
-Topics covered - 
-1. Learn how to implement dotenv for configurations in express api.
-2. How to implement CORS in API?
-3. Environment variables setup using dotenv package.
-4. Deploy your node js or express api using Heroku.
+Rest API Tutorial
