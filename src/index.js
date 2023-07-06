@@ -11,13 +11,17 @@ const mongoose = require("mongoose");
 
 app.use(express.json());
 
+
 app.use(cors());
+
 
 app.use("/users", userRouter);
 app.use("/note", noteRouter);
 
 app.get("/", (req, res)=>{
+
     res.send("WELCOME FROM CHEZZY CODE");
+
 });
 
 const PORT = process.env.PORT || 8000;
