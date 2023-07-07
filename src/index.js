@@ -24,7 +24,7 @@ app.get("/", (req, res)=>{
 
 });
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 9000;
 
 mongoose.connect("mongodb+srv://admin:admin@cluster0.5y4negj.mongodb.net/notes_db?retryWrites=true&w=majority")
 .then(()=>{
