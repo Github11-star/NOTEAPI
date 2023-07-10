@@ -21,10 +21,5 @@
   },
   "engines": {
     "node": "14.20.1"
-  },
-  "devDependencies": {
-    "node": "^20.4.0",
-    "node-sass": "^9.0.0",
-    "sass": "^1.63.6"
   }
 }
